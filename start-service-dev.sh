@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+
+
 CURRENT=$(pwd)
+
+docker network inspect fae_backend &> /dev/null || docker network create fae_backend
 
 # pull service
 docker-compose \
