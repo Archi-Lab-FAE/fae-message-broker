@@ -7,4 +7,4 @@ docker-compose -p message-broker \
   down
   
 
-docker network inspect coalbase_backend &> /dev/null && docker network rm coalbase_backend
+docker network inspect fae_backend &> /dev/null && docker network rm fae_backend
