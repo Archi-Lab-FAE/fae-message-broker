@@ -8,7 +8,7 @@ PROJECT_NAME="fae-message-broker"
 
 # Stop service
 docker-compose -p ${PROJECT_NAME} \
-  -f "$CURRENT/docker-compose-dev.yml" \
+  -f "$CURRENT/docker-compose.dev.yml" \
   down
 
 # Remove network
