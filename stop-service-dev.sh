@@ -4,9 +4,10 @@ CURRENT="$(
   cd "$(dirname "$0")"
   pwd
 )"
+PROJECT_NAME="fae-message-broker"
 
 # Stop service
-docker-compose -p message-broker \
+docker-compose -p ${PROJECT_NAME} \
   -f "$CURRENT/docker-compose-dev.yml" \
   down
 
